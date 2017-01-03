@@ -43,6 +43,13 @@ Element | Actions
 **L3**  | Selection will change T3 filtering and new item will be loaded in T4
 **T4**  | None (perhaps urls for external links)
 
+Available data (all as JSON files):
+
+* __hList__ is list of subjects (the H items) with summary details
+* __gList__ is list of groups for H items with minimal details
+* __mList__ is list of measures 
+* __aData__ is the analysis produced by R
+
 ###Road map
 
 ####Step 0: Development Enviroment
