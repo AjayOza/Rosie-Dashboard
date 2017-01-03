@@ -2,7 +2,7 @@
 
 A test area for specific requirement. This repo is unlikely to be of help to you but feel free to have a look.
 
-This is part of prospective ROSIE project - more detials on that project are not available as yet.
+Part of prospective ROSIE project - more detials on that project are not available.
 
 ### Requirements
 
@@ -27,7 +27,7 @@ Element | Description | Type | Filter
 **T1**  | Details | Form layout | Selected or default `H` item 
 **T2**  | Table of perfomance analyses for each `M` | Tabular layout | `A` on selected or default `H`
 **L2**  | List of `G` items | Group of buttons | None
-**T3**  | Table of perfomance analyses for each `H` within `G` that `H` in **T1** belongs to | Tabular layout  | `A` on `G` in **T1** and first or selected item `M` as in **T2**
+**T3**  | Table of perfomance analyses for each `H` within `G` that `H` in T1 belongs to | Tabular layout  | `A` on `G` in T1 and first or selected item `M` as in T2
 **L3**  | List of `M` items | Group of buttons | None
 **T4**  | Details | Form layout | Selected or default `M` item 
 
@@ -53,8 +53,8 @@ RStudio project as the analyses from the raw data will take place here and easy 
 
 These are importanat areas to test out before full coding can take place
 * Controllers, components and design/layout with fake data
-* Double-check with site host and  background website to see if layout/folders/libs are supported
-* Sparklines within AngularJS directive (use JQuery as there )
+* Double-check with site host that background website can support layout/folders/libs
+* Sparklines within AngularJS directive (use JQuery as there already)
 * Data access via ngResource to fetch JSON files
 * Routing of secondary set of measures or different grouping paramter into tabs
 
