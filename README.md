@@ -51,7 +51,8 @@ RStudio project as the analyses from the raw data will take place here and easy 
 
 ####Step 1: Concept testing
 
-These are importanat areas to test out before full coding can take place
+These are importanat areas to test out before full coding can take place. See project Kanbans for progress on GitHub
+
 * Controllers, components and design/layout with fake data
 * Double-check with site host that background website can support layout/folders/libs
 * Sparklines within AngularJS directive (use JQuery as there already)
