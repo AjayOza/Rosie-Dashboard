@@ -1,0 +1,67 @@
+<h3>Rosie Dash Dummy App</h3>
+
+<h4>List L1</h4> Hero list in drop down
+<br>
+
+<select ng-options="option.name for option in $ctrl.hList track by option.hid" 
+  ng-model="$ctrl.query" ng-change="$ctrl.onL1Change()" >
+</select>
+
+<h4>Table T1</h4> Detail view of selected hero
+<b>{{ $ctrl.query.name }}</b><br>
+Group: {{ $ctrl.query.group }}<br>
+<i>{{ $ctrl.query.snippet }}</i><br>
+<ins>Code: {{ $ctrl.query.hid }}</ins><br>
+
+<h4>Table T2</h4> Performance details of selected hero
+<table>
+  <tr>
+    <th>Hero Code </th>
+    <th>M Code </th>
+    <th>M Name </th>
+    <th>M Value </th>
+  </tr>
+    <tr ng-repeat="h in $ctrl.aData | filter:$ctrl.query.hid" 
+    ng-click="$ctrl.onT2Click(h)">
+      <td>{{ h.hid }}</td>
+      <td>{{ h.mid }}</td>
+      <td>{{ h.mname }}</td>
+      <td>{{ h.mvalue }}</td>
+    </tr>
+</table>
+
+<h4>List L2</h4> Group list (this will be a horizontal later)
+<ul>
+   <li ng-repeat="g in $ctrl.gList" ng-click="$ctrl.onL2Click(g)">
+     {{ g.gid }} {{ g.group }}
+</ul>
+
+<h4>Table T3</h4> Performance details of heros in the group
+<table>
+  <tr>
+    <th>Group </th>
+    <th>Hero Code </th>
+    <th>M Code </th>
+    <th>M Name </th>
+    <th>M Value </th>
+  </tr>
+    <tr ng-repeat="h in $ctrl.aData | filter:$ctrl.gDefault.group | filter:$ctrl.mDefault.mid" ng-click="$ctrl.onT3Click(h)">
+      <td>{{ h.group }}</td>
+      <td>{{ h.hid }}</td>
+      <td>{{ h.mid }}</td>
+      <td>{{ h.mname }}</td>
+      <td>{{ h.mvalue }}</td>
+    </tr>
+</table>
+
+<h4>List L3</h4> Measure list (this will be a horizontal later)
+<ul>
+   <li ng-repeat="m in $ctrl.mList" ng-click="$ctrl.onL3Click(m)">
+    {{ m.mid }}  {{ m.mname }}
+</ul>
+
+<h4>Table T4</h4> Detail view of selected measure
+<b>{{ $ctrl.mDefault.mname }}</b><br>
+Desc: {{ $ctrl.mDefault.mdesc }}<br>
+<ins>Code: {{ $ctrl.mDefault.mid }}</ins><br>
+
