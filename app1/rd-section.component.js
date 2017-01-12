@@ -3,9 +3,10 @@ angular.
 module('rdSection').
 component('rdSection', {
   templateUrl: 'rd-section.template.html',
-  controller:  function rdSectionController() {
+  controller:  ['rdDataService', function rdSectionController(rdDataService) {
     
-
+    //pull the service here - rem to inject first using 'rdDataService.somevariable'
+    
     
     this.hDefaulti = 0; //defaults to first hospital
 
@@ -52,7 +53,7 @@ component('rdSection', {
     }];
     this.mDefault = this.mList[0];
 
-    this.aData = [{
+    this.aDatax = [{
       id: 'a01',
       hid: 'H01',
       group: 'alpha',
@@ -110,6 +111,9 @@ component('rdSection', {
       mvalue: 'poor'
     }];
 
+    this.aData = JSON.parse(rdDataService.aData);
+    
+
     this.onL3Click = function(selm) {
       this.mDefault = selm;
     };
@@ -143,5 +147,5 @@ component('rdSection', {
       return results;
     }
   }
-  
+  ]
 });
