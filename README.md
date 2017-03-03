@@ -1,16 +1,16 @@
 # Rosie-Dashboard
 
-A test area for specific requirement. This repo is unlikely to be of help to you but feel free to have a look.
+A test area for a specific requirement. This repo is unlikely to be of help to you but feel free to have a look.
 
-Part of prospective ROSIE project - more details on that project are not available.
+Part of prospective ROSIE project - more details on that project are not available as yet.
 
 ### Requirements
 
-The need is for a section of website that is affectively a **dashboard** to show the performance of number of subjects according to a number of measures. The other areas of the website (e.g. menu) will be built elsewhere. There should be no sidebar and other features and the dashboard should take-up the full width of the screen. There is a need to display data in a succinct manner so use sparklines for visualisation.
+The need is for a section of website that is affectively a **dashboard** to show the performance of number of subjects according to a number of measures. The other areas of the website (e.g. menu) will be built elsewhere. There should be no sidebar and other features and the dashboard should take up the full width of the screen. There is a need to display data in a succinct manner so use sparklines for visualisation.
 
-The user would select a subject of interest and the details of performance by each measure will be displayed in a table along with details of the subject (name, short description etc). Also displayed will be another table of performances of individuals within the group that the individual subject belongs to, defaulted to the first performance measure. The measure by which the group is measured can be changed by clicking a different measure on above table. The details (units of measure, short description, url etc) of selected measure will also be displayed.
+The user would select a subject of interest and the details of performance by each measure will be displayed in a table along with details of the subject (name, short description etc). Also displayed will be another table of performances of individuals within the group that the individual subject belongs to, defaulted to the first performance measure. The measure by which the group is measured can be changed by clicking a different measure on the first table. The details (units of measure, short description, url etc) of selected measure will be displayed in the second table.
 
-R will be used to generate the performance analyses (averages per group, trends, year-to-date etc). R will obtain raw data and push JSON files of that will be used by this section to display performance of each subject.
+R will be used to generate the performance analyses (averages per group, trends, year-to-date etc). R will obtain raw data and push them to a JSON files, which  will be used by this dashboard section to display performance of each subject.
 
 These are short names used:
 
@@ -62,8 +62,8 @@ These are important areas to test out before full coding can take place. See pro
 
 * Controllers, components and design/layout with fake data
 * Double-check with site host that background website can support layout/folders/libs
-* Sparklines within AngularJS directive (use JQuery as there already)
-* Data access via ngResource to fetch JSON files
+* Sparklines within AngularJS directive (use JQuery as it is there already)
+* Data access via ngResource to fetch JSON files or similar
 * Routing of secondary set of measures or different grouping parameter into tabs
 
 ####Step 2: 
@@ -79,3 +79,8 @@ Do up the section with realistic data
 Full section deployed in the site
 
 ####Step 5: Testing and closing
+
+
+## License
+
+(c) 2017 AjayOza under MIT

@@ -7,8 +7,20 @@ function rdDataService () {
    this.somevariable = 'somevalue';
    
    this.aData = 
-
 '[{"id":"a01","hid":"H01","group":"alpha","mid":"M01","mname":"speed","mvalue":"fast"},{"id":"a02","hid":"H01","group":"alpha","mid":"M02","mname":"agility","mvalue":"good"},{"id":"a03","hid":"H02","group":"alpha","mid":"M01","mname":"speed","mvalue":"slow"},{"id":"a04","hid":"H02","group":"alpha","mid":"M02","mname":"agility","mvalue":"unknown"},{"id":"a05","hid":"H03","group":"beta","mid":"M01","mname":"speed","mvalue":"unknown"},{"id":"a06","hid":"H03","group":"beta","mid":"M02","mname":"agility","mvalue":"poor"},{"id":"a07","hid":"H04","group":"beta","mid":"M01","mname":"speed","mvalue":"slow"},{"id":"a08","hid":"H04","group":"beta","mid":"M02","mname":"agility","mvalue":"poor"}]';
+
+
+  this.hData = 
+  '[{"hid":"H01","name":"Super Dude","group":"alpha","snippet":"Morbi est augue, tempus eu urna eu, pretium ullamcorper ipsum."},{"hid":"H02","name":"Bat Person","group":"alpha","snippet":"Donec luctus dignissim faucibus. Duis convallis molestie orci a vulputate."},{"hid":"H03","name":"Spider Chap","group":"beta","snippet":"Curabitur in dui in ligula convallis porta."},{"hid":"H04","name":"Mighty Man","group":"beta","snippet":"gasd yiuashuidgh aso."}]';
+  
+  
+  this.gData = 
+'[{"gid":"G01","group":"alpha"},{"gid":"G02","group":"beta"}]';
+  
+  
+  this.mData = 
+  '[{"mid":"M01","mname":"speed","mdesc":"fast or slow"},{"mid":"M02","mname":"agility","mdesc":"good or poor"}]';
+  
 
 //**********************************************
 // If multiple variables are populated here as json strings in this file

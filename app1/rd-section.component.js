@@ -113,7 +113,8 @@ component('rdSection', {
 
     this.aData = JSON.parse(rdDataService.aData);
     
-
+    console.log(JSON.stringify(this.mList));
+    
     this.onL3Click = function(selm) {
       this.mDefault = selm;
     };
